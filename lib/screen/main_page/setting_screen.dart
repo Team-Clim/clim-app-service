@@ -127,10 +127,17 @@ class _SettingScreenState extends State<SettingScreen> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 15.h,
+                  ),
                   TextButton(
                     onPressed: () {},
+                    style: ButtonStyle(
+                      padding: WidgetStateProperty.all<EdgeInsets>(EdgeInsets.zero),
+                      minimumSize: WidgetStateProperty.all<Size>(Size(0.w, 0.h)),
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    ),
                     child: Text(
-                      textAlign: TextAlign.left,
                       '로그아웃',
                       style: TextStyle(
                           color: const Color(0xffFF5555),
