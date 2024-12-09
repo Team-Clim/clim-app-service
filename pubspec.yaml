@@ -91,6 +91,9 @@ flutter:
   - assets/images/icons/home.png
   - assets/images/icons/speaker.png
   - assets/images/icons/setting.png
+  - assets/images/icons/home2.png
+  - assets/images/icons/speaker2.png
+  - assets/images/icons/setting2.png
 
   - assets/images/circle.png
   - assets/images/Clapping hands.png
