@@ -12,7 +12,7 @@ class SettingScreen extends StatefulWidget {
 }
 
 class _SettingScreenState extends State<SettingScreen> {
-  bool isChecked = false;
+  bool isChecked = true;
 
   @override
   Widget build(BuildContext context) {
@@ -118,18 +118,19 @@ class _SettingScreenState extends State<SettingScreen> {
                       ),
                       CupertinoSwitch(
                         value: isChecked,
-                        onChanged: (value) {
+                        onChanged: (bool? value) {
                           setState(() {
-                            isChecked = value;
+                            isChecked = value ?? false;
                           });
                         },
-                        trackColor: const Color(0xff48E892),
+                        activeColor: const Color(0xff48E892),
                       ),
                     ],
                   ),
                   TextButton(
                     onPressed: () {},
                     child: Text(
+                      textAlign: TextAlign.left,
                       '로그아웃',
                       style: TextStyle(
                           color: const Color(0xffFF5555),
