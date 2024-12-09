@@ -18,13 +18,14 @@ class _SettingScreenState extends State<SettingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffF1F3F5),
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-      ),
       body: Column(
         children: [
           Container(
-            color: Colors.white,
+            color: const Color(0xFFFFFFff),
+            height: 60.h,
+          ),
+          Container(
+            color: const Color(0xFFFFFFff),
             width: 500.w,
             height: 210.h,
             child: Padding(
@@ -84,9 +85,9 @@ class _SettingScreenState extends State<SettingScreen> {
             height: 10.h,
           ),
           Container(
-            color: Colors.white,
+            color: const Color(0xFFFFFFff),
             width: 500.w,
-            height: 500.h,
+            height: 529.h,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 25.w),
               child: Column(
