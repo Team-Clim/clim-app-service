@@ -10,7 +10,10 @@ class ClimImage {
   static Image backImage = Image.asset('assets/images/icons/back-arrow2.png', width: 14.w, height: 14.h,);
   static Image homeImage = Image.asset('assets/images/icons/home.png', width: 26.w, height: 28.h,);
   static Image speakerImage = Image.asset('assets/images/icons/speaker.png', width: 26.w, height: 28.h,);
-  static Image subtractImage = Image.asset('assets/images/icons/Subtract.png', width: 27.w, height: 27.h,);
+  static Image settingImage = Image.asset('assets/images/icons/setting.png', width: 27.w, height: 27.h,);
+  static Image home2Image = Image.asset('assets/images/icons/home2.png', width: 26.w, height: 28.h,);
+  static Image speaker2Image = Image.asset('assets/images/icons/speaker2.png', width: 26.w, height: 28.h,);
+  static Image setting2Image = Image.asset('assets/images/icons/setting2.png', width: 27.w, height: 27.h,);
 
   static Image clapImage = Image.asset('assets/images/Clapping hands.png', width: 165.w, height: 165.h,);
   static Image lockedImage = Image.asset('assets/images/Locked with key.png', width: 113.w, height: 113.h,);
