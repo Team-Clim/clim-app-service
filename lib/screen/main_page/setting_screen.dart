@@ -86,7 +86,7 @@ class _SettingScreenState extends State<SettingScreen> {
           Container(
             color: Colors.white,
             width: 500.w,
-            height: 477.h,
+            height: 500.h,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 25.w),
               child: Column(
