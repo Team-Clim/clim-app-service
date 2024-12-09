@@ -132,9 +132,9 @@ class _SettingScreenState extends State<SettingScreen> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    style: ButtonStyle(
-                      padding: WidgetStateProperty.all<EdgeInsets>(EdgeInsets.zero),
-                      minimumSize: WidgetStateProperty.all<Size>(Size(0.w, 0.h)),
+                    style: TextButton.styleFrom(
+                      minimumSize: Size.zero,
+                      padding: EdgeInsets.zero,
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                     child: Text(
