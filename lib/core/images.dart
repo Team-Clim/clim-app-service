@@ -1,6 +1,7 @@
 class Images {
   Images._();
 
+  //클림 로고
   static const String climLogo1 = 'assets/images/logos/logo1.png';
   static const String climLogo2 = 'assets/images/logos/logo2.png';
 
