@@ -1,6 +1,7 @@
 import 'package:clim_app_service/core/images.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -43,12 +44,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final Size screenSize = MediaQuery.of(context).size;
-    final double logoWidth = screenSize.width * 0.32; // 화면 너비의 40% 크기로 설정
-    final double logoHeight = screenSize.height * 0.35; // 비율에 따라 높이 설정
-
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC), // 연한 배경색
       body: Center(
         child: AnimatedBuilder(
           animation: _controller,
@@ -59,8 +55,8 @@ class _SplashScreenState extends State<SplashScreen>
                 scale: _scaleAnimation.value,
                 child: Image.asset(
                   Images.climLogo1,
-                  width: logoWidth,
-                  height: logoHeight,
+                  width: 0.32.sw,//화면 너비의 3.2%
+                  height: 0.35.sh,//화면 높이의 3.5%
                 )
               ),
             );
