@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  go_router: ^14.8.1
 
 dev_dependencies:
   flutter_test:
@@ -32,21 +33,21 @@ flutter:
   fonts:
     - family: Inter
       fonts:
-          - asset: assets/fonts/Inter/Inter-Thin.ttf
+          - asset: assets/fonts/Inter-Thin.ttf
             weight: 100
-          - asset: assets/fonts/Inter/Inter-ExtraLight.ttf
+          - asset: assets/fonts/Inter-ExtraLight.ttf
             weight: 200
-          - asset: assets/fonts/Inter/Inter-Light.ttf
+          - asset: assets/fonts/Inter-Light.ttf
             weight: 300
-          - asset: assets/fonts/Inter/Inter-Regular.ttf
+          - asset: assets/fonts/Inter-Regular.ttf
             weight: 400
-          - asset: assets/fonts/Inter/Inter-Medium.ttf
+          - asset: assets/fonts/Inter-Medium.ttf
             weight: 500
-          - asset: assets/fonts/Inter/Inter-SemiBold.ttf
+          - asset: assets/fonts/Inter-SemiBold.ttf
             weight: 600
-          - asset: assets/fonts/Inter/Inter-Bold.ttf
+          - asset: assets/fonts/Inter-Bold.ttf
             weight: 700
-          - asset: assets/fonts/Inter/Inter-ExtraBold.ttf
+          - asset: assets/fonts/Inter-ExtraBold.ttf
             weight: 800
-          - asset: assets/fonts/Inter/Inter-Black.ttf
+          - asset: assets/fonts/Inter-Black.ttf
             weight: 900
