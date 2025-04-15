@@ -1,5 +1,7 @@
 import 'package:clim_app_service/presentation/introduce/view/ui/introduce_screen.dart';
 import 'package:clim_app_service/presentation/splash/splash_screen.dart';
+import 'package:clim_app_service/presentation/uesr/view/ui/sign_in_screen.dart';
+import 'package:clim_app_service/presentation/uesr/view/ui/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -28,6 +30,8 @@ class _ClimAppState extends State<ClimApp> {
       routes: [
         GoRoute(path: '/splash', name: 'splash_screen', builder: (_, __) => const SplashScreen()),
         GoRoute(path: '/introduce', name: 'introduce_screen', builder: (_, __) => const IntroduceScreen()),
+        GoRoute(path: '/signup', name: 'sign_up_screen', builder: (_, __) => const SignUpScreen()),
+        GoRoute(path: '/login', name: 'log_in_screen', builder: (_, __) => const SignInScreen()),
       ],
     );
   }
