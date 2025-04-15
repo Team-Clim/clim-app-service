@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomButton extends StatelessWidget {
-  final Function? onPressed;
-  final String? text;
+  final VoidCallback? onPressed;
+  final String text;
   final Color? color;
   final Color? textColor;
 
   const CustomButton({
     super.key,
     this.onPressed,
-    this.text,
+    required this.text,
     this.color,
     this.textColor,
   });
@@ -26,13 +26,13 @@ class CustomButton extends StatelessWidget {
         ),
         padding: EdgeInsets.symmetric(vertical: 13.h, horizontal: 133.w),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Text(
-        text!,
+        text,
         style: TextStyle(
           fontWeight: FontWeight.w700,
           color: textColor,
-          fontSize: 20.sp,
+          fontSize: 19.sp,
         ),
       ),
     );
