@@ -1,6 +1,7 @@
 import 'package:clim_app_service/presentation/introduce/view/ui/introduce_screen.dart';
 import 'package:clim_app_service/presentation/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 import 'core/clim/clim_color.dart';
@@ -33,14 +34,17 @@ class _ClimAppState extends State<ClimApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routerConfig: router,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Inter',
-        scaffoldBackgroundColor: ClimColors.climWhite100,
+    return ScreenUtilInit(
+      designSize: const Size(430, 932),
+      child: MaterialApp.router(
+        routerConfig: router,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: 'Inter',
+          scaffoldBackgroundColor: ClimColors.climWhite100,
+        ),
+        // home: const SplashScreen(),
       ),
-      // home: const SplashScreen(),
     );
   }
 }
