@@ -1,8 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:clim_app_service/component/clim_layout.dart';
 import 'package:clim_app_service/core/images.dart';
+import 'package:clim_app_service/main.dart';
+import 'package:clim_app_service/presentation/introduce/view/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/clim/clim_color.dart';
@@ -74,7 +77,10 @@ class _IntroduceScreenState extends State<IntroduceScreen> {
               options: CarouselOptions(
                 initialPage: 0,
                 viewportFraction: 1,
+                height: 315.h,
                 enlargeCenterPage: true,
+                autoPlay: true,
+                autoPlayInterval: const Duration(seconds: 3),
                 onPageChanged: (index, reason) => setState(() {
                   activeIndex = index;
                 }),
@@ -85,25 +91,42 @@ class _IntroduceScreenState extends State<IntroduceScreen> {
                 return imageSlider(path, index);
               },
             ),
-            SizedBox(height: 32.96.h),
+            SizedBox(height: 50.h),
             Align(
               alignment: Alignment.bottomCenter,
               child: indicator(),
             ),
-
             SizedBox(height: 90.7.h),
+            CustomButton(
+              onPressed: () {
+                context.go('/login');
+              },
+              text: '로그인 하기',
+              textColor: ClimColors.climWhite100,
+              color: ClimColors.climMint100,
+            ),
+            SizedBox(height: 11.17.h),
+            CustomButton(
+              onPressed: () {
+                context.go('/signup');
+              },
+              text: '회원가입 하기',
+              textColor: ClimColors.climMint100,
+              color: ClimColors.climWhite100,
+            ),
           ],
         ),
       ),
     );
   }
 
-  Widget imageSlider(path, index) => Container(
-        width: 339.8.w,
-        height: 282.65.h,
+  Widget imageSlider(path, index) => SizedBox(
+        width: 1.sw,
+        height: 1.sh,
         child: Image.asset(
           path,
-          fit: BoxFit.fill,
+          // height: 0.45.sh,
+          fit: BoxFit.cover,
         ),
       );
 
