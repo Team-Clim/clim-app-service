@@ -16,4 +16,5 @@ class ClimColors {
   static const Color climGray300 = Color(0xFFAAAAAA);
   static const Color climGray400 = Color(0xFF838383);
   static const Color climGray500 = Color(0xFFCCCCCC);
+  static const Color climGray600 = Color(0xFF616366);
 }
