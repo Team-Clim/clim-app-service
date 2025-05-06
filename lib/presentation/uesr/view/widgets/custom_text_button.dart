@@ -5,12 +5,13 @@ import '../../../../core/clim/clim_color.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String text;
-  const CustomTextButton({super.key, required this.text});
+  final VoidCallback? onPressed;
+  const CustomTextButton({super.key, required this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       child: Text(
         text,
         style: TextStyle(
