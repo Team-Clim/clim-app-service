@@ -25,4 +25,5 @@ class Images {
   static const String lock = 'assets/images/lock.png';
   static const String returnIcon = 'assets/images/return.png';
   static const String surpriseIcon = 'assets/images/surprise.png';
+  static const String circleImage = 'assets/images/circle.png';
 }
