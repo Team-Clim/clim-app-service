@@ -46,8 +46,12 @@ class _ClimAppState extends State<ClimApp> {
         theme: ThemeData(
           fontFamily: 'Inter',
           scaffoldBackgroundColor: ClimColors.climWhite100,
+          textButtonTheme: TextButtonThemeData(
+            style: ButtonStyle(
+              overlayColor: MaterialStateColor.resolveWith((states) => Colors.transparent),
+            ),
+          )
         ),
-        // home: const SplashScreen(),
       ),
     );
   }
