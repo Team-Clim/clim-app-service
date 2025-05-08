@@ -98,7 +98,7 @@ class _IntroduceScreenState extends State<IntroduceScreen> {
             SizedBox(height: 90.7.h),
             CustomButton(
               onPressed: () {
-                context.go('/login');
+                context.push('/login');
               },
               text: '로그인 하기',
               textColor: ClimColors.climWhite100,
@@ -107,7 +107,7 @@ class _IntroduceScreenState extends State<IntroduceScreen> {
             SizedBox(height: 11.17.h),
             CustomButton(
               onPressed: () {
-                context.go('/signup');
+                context.push('/signup');
               },
               text: '회원가입 하기',
               textColor: ClimColors.climMint100,
