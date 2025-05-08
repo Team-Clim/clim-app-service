@@ -6,7 +6,18 @@ import '../../../../core/clim/clim_color.dart';
 class CustomTextButton extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
-  const CustomTextButton({super.key, required this.text, this.onPressed});
+  final Color? color;
+  final double? fontSize;
+  final FontWeight? fontWeight;
+
+  const CustomTextButton({
+    super.key,
+    required this.text,
+    this.onPressed,
+    this.color = ClimColors.climGray500,
+    this.fontSize = 14,
+    this.fontWeight,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +26,9 @@ class CustomTextButton extends StatelessWidget {
       child: Text(
         text,
         style: TextStyle(
-          color: ClimColors.climGray500,
-          fontSize: 14.sp,
-          fontWeight: FontWeight.w500,
+          color: color,
+          fontSize: fontSize?.sp,
+          fontWeight: fontWeight,
         ),
       ),
     );
