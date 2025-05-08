@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:clim_app_service/component/clim_layout.dart';
 import 'package:clim_app_service/core/images.dart';
-import 'package:clim_app_service/main.dart';
 import 'package:clim_app_service/presentation/introduce/view/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
