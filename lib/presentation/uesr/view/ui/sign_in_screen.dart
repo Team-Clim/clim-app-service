@@ -1,5 +1,4 @@
 import 'package:clim_app_service/core/images.dart';
-import 'package:clim_app_service/main.dart';
 import 'package:clim_app_service/presentation/uesr/view/widgets/custom_button.dart';
 import 'package:clim_app_service/presentation/uesr/view/widgets/custom_text_button.dart';
 import 'package:clim_app_service/presentation/uesr/view/widgets/custom_text_field.dart';
